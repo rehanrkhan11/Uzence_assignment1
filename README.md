@@ -1,46 +1,162 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# 📘 React Component Assignment
 
-In the project directory, you can run:
+This project is a **React-based frontend assignment** built with a focus on reusability, clean folder structure, theming (light/dark mode), and component-driven development.
 
-### `npm start`
+It demonstrates:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* 🔐 **Login Page** with password toggle
+* 🎨 **Dark/Light Theme Toggle**
+* 👤 **User Management UI** (add/search users)
+* 📑 **Storybook Integration** for isolated component previews
+* ✅ **Unit Tests** for components
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Clone the Repository
 
-### `npm run build`
+```bash
+git clone https://github.com/your-username/uzence_assignment.git
+cd uzence_assignment-master
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Install Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Run the Development Server
 
-### `npm run eject`
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+App will run on: **[http://localhost:3000](http://localhost:3000)**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🧩 Folder Structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+src/
+├── components/
+│   ├── DataTable/        # User table with search & selection
+│   ├── InputField/       # Reusable input component
+│   ├── ThemeToggle/      # Light/Dark mode toggle
+│   └── UserTable.js
+│
+├── pages/
+│   ├── AssignmentPage.js # Main assignment page
+│   └── LoginPage.js      # Login UI
+│
+├── App.tsx               # Root component
+├── index.tsx             # Entry point
+└── styles (App.css, index.css)
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📖 Storybook
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project uses **Storybook** to develop and showcase components in isolation.
+
+### Run Storybook locally:
+
+```bash
+npm run storybook
+```
+
+### Deployed Preview:
+
+👉 [Storybook Preview Link](https://your-chromatic-or-vercel-link.com)
+*(Deployed with Chromatic/Vercel)*
+
+---
+
+## 🎥 Screenshots
+
+### 🔑 Login Page (Dark Mode with Toggle)
+
+![Login Page](./docs/screenshots/login-dark.png)
+
+### 🌗 Login Page (Light Mode)
+
+![Login Page Light](./docs/screenshots/login-light.png)
+
+### 👤 Assignment Page – User Table & Password Toggle (Visible)
+
+![User Table Password Visible](./docs/screenshots/user-table-visible.png)
+
+### 👤 Assignment Page – User Table & Password Toggle (Hidden)
+
+![User Table Password Hidden](./docs/screenshots/user-table-hidden.png)
+
+---
+
+## 🛠️ Approach
+
+1. **Component-driven development**
+
+   * Each feature (Input, DataTable, ThemeToggle) is modular & reusable.
+
+2. **Dark/Light Theme**
+
+   * Global theme state toggled via ThemeToggle component.
+
+3. **Password Toggle**
+
+   * Eye icon to switch between masked/unmasked password.
+
+4. **User Table**
+
+   * Mock data with Alice/Bob.
+   * Search by name/email.
+
+5. **Storybook + Tests**
+
+   * `.stories.tsx` for each component.
+   * Basic unit tests with React Testing Library.
+
+---
+
+## ✅ Features
+
+* 👤 Add/search users
+* 🔍 User filtering
+* 🔐 Password input with toggle
+* 🌗 Dark/Light mode
+* 📚 Storybook integration
+* 🧪 Component tests
+
+---
+## Screen shots
+<img width="1606" height="858" alt="Screenshot 2025-08-18 194106" src="https://github.com/user-attachments/assets/61ceb20a-4b76-4e17-84dd-06b28a54a7e8" />
+<img width="1229" height="789" alt="Screenshot 2025-08-19 125501" src="https://github.com/user-attachments/assets/f0b5822f-1ca8-46f0-a132-d894d4cd948c" />
+
+
+## 📦 Tech Stack
+
+* **React + TypeScript** ⚛️
+* **Tailwind CSS** 🎨
+* **Storybook** 📖
+* **React Testing Library + Jest** 🧪
+
+---
+
+## 👨‍💻 Author
+
+**Rehan Raza Khan**
+📍 B.Tech CSE, Galgotias University
+📧 [rehan@example.com](mailto:rehan@example.com)
+
+---
+
+3. Commit + push them along with this README.
+
+---
+
+Do you also want me to **write the GitHub commit commands step-by-step** so you can upload README + screenshots in one go?
