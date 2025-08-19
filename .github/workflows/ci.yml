@@ -1,0 +1,35 @@
+name: CI - Frontend Assignment
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Setup Node
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Run build
+      - name: Build project
+        run: npm run build --if-present
+
+      # Run tests
+      - name: Run tests
+        run: npm test -- --watchAll=false
